@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Messages</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-bottom:1px solid black;">
+        <div class="container-fluid">
+            <button class="btn bg-glassy d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo2.png" alt="Bootstrap" style="margin-left:20px; width: 80px;">
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="tru e"><i class="fas fa-bell"></i></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">
+                        <div class="vertical-line"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-light d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../img/logo2.png" alt="Bootstrap" width="30" height="30" style="border-radius: 50%;" />
+                        <span class="d-none d-sm-block">  Aedrian Jeao </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end">
+                        <div class="d-flex d-sm-none align-items-center justify-content-center p-3 mb-3" style="border-bottom: 1px solid gainsboro;">
+                            <li> Aedrian Jeao </li>
+                    
+                        </div>
+                       
+                   
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="community.html">Community</a></li>
+                        <li><a class="dropdown-item" href="messages.html">Messages</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="overflow: hidden;">
+                <input class="rounded-pill form-control" type="text" name="" id="" placeholder="Search Messages...">
+                <hr>
+                <div class="d-flex flex-column rounded clickable" id="Messages" style="position: relative; background-color: whitesmoke; overflow-y: scroll; height: 100%;">
+                    <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                        <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                        <div class="d-flex flex-column ms-3 mt-1">
+                            <h5 class="mb-0 ">Arvin Malaluan</h5>
+                            <p style="font-size: small;" class="">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                        <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                        <div class="d-flex flex-column ms-3 mt-1">
+                            <h5 class="mb-0 ">Florie Mae Cordero</h5>
+                            <p style="font-size: small;" class="">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                        <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                        <div class="d-flex flex-column ms-3 mt-1">
+                            <h5 class="mb-0">Sir Juan</h5>
+                            <p style="font-size: small;" class="">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+          
+      
+        </div>
+      </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="d-none d-xl-block col-3">
+                <div class="d-flex flex-column p-3 mt-2 rounded" style="background-color: whitesmoke; border: 1px solid gainsboro; height: 817px;">
+                    <h3 class="mb-3 ">Messages</h3>
+                    <input class="rounded-pill form-control" type="text" name="" id="" placeholder="Search Messages...">
+                    <hr>
+                    <div class="d-flex flex-column rounded clickable" id="Messages" style="position: relative; background-color: whitesmoke; overflow-y: scroll; height: 100%;">
+                        <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                            <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                            <div class="d-flex flex-column ms-3 mt-1">
+                                <h5 class="mb-0 ">Arvin Malaluan</h5>
+                                <p style="font-size: small;">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                            <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                            <div class="d-flex flex-column ms-3 mt-1">
+                                <h5 class="mb-0 ">Florie Mae Cordero</h5>
+                                <p style="font-size: small;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex message-container rounded p-2 me-3 mt-2 align-items-center">
+                            <img src="../img/logo2.png" alt="Bootstrap" class="img-fluid" style="border-radius: 50%; border: 3px solid #efa92a; background-color: white; width: 60px; height: 60px;" />
+                            <div class="d-flex flex-column ms-3 mt-1">
+                                <h5 class="mb-0">Sir Juan</h5>
+                                <p style="font-size: small;" >Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-9">
+                <div class="d-flex mt-2 p-3 align-items-center" style="background-color: #0e3470e7; padding: 0 10px; border-radius: 5px 5px 0 0;">
+                    <img src="../img/logo2.png" alt="Bootstrap" width="50" height="50" style="border-radius: 50%; border:3px solid #efa92a; background-color: white;" />
+                    <h5 class="ms-3" style="color:white">Arvin Malaluan</h5>
+                    <div class="dropdown ms-auto">
+                        <button class="btn btn-light rounded" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Delete Conversation</a></li>
+                            <li><a class="dropdown-item" href="#">Report</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex p-2" style="background-color: whitesmoke; border: 1px solid gainsboro; height: 670px;">
+
+                    <ul style="list-style: none; padding:0; width: 1450px; overflow-y: scroll;" class="d-flex flex-column" id="msgs">
+
+                        <li class="d-flex align-items-end" style="width:fit-content;">
+                            <img src="../img/logo2.png" alt="Bootstrap" width="40" height="40" class="me-2 mb-2" style="border-radius: 50%; border:3px solid #efa92a; background-color: white;" />
+                            <div class="d-flex flex-column">
+                                <p style="font-size:12px;" class="ps-2 mb-0">Arvin</p>
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2 mt-1"  style="background-color: white; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage1" aria-expanded="false" aria-controls="chatMessage1">
+                                    <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage1" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0" >12:01 AM</p>
+                                </div>
+
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: white; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage5" aria-expanded="false" aria-controls="chatMessage5">
+                                    <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage5" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0" >12:01 AM</p>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </li>
+
+                        <li class="d-flex flex-row-reverse">
+                            <div class="d-flex flex-column align-items-end me-2 position-relative">
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: #0e3470e7; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage3" aria-expanded="false" aria-controls="chatMessage3">
+                                    <p class="m-0" style="color:white;">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage3" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3" >12:01 AM</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex align-items-end" style="width:fit-content;">
+                            <img src="../img/logo2.png" alt="Bootstrap" width="40" height="40" class="me-2 mb-2" style="border-radius: 50%; border:3px solid #efa92a; background-color: white;" />
+                            <div class="d-flex flex-column position-relative">
+                                <p style="font-size:12px;" class="ps-2 mb-0">Arvin</p>
+                               <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-1 mt-1"  style="background-color: white; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage2" aria-expanded="false" aria-controls="chatMessage2">
+                                    <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage2" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0" >12:01 AM</p>
+                                </div>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex flex-row-reverse">
+                            <div class="d-flex flex-column align-items-end me-2 ">
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: #0e3470e7; height:auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage4" aria-expanded="false" aria-controls="chatMessage4">
+                                    <p style="color:white;" class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage4" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3" >12:01 AM</p>
+                                </div>
+                              
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: #0e3470e7; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage6" aria-expanded="false" aria-controls="chatMessage6">
+                                    <p style="color:white;" class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage6" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3" >12:01 AM</p>
+                                </div>
+                               
+
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: #0e3470e7; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage7" aria-expanded="false" aria-controls="chatMessage7">
+                                    <p style="color:white;" class="m-0">Lorem ipsum dolor sit amet.</p>
+                                  
+                                </div>
+                                <div id="chatMessage7" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3" >12:01 AM</p>
+                                </div>
+
+                                <div class="rounded-4 d-flex justify-content-start align-items-center p-2 mb-2"  style="background-color: #0e3470e7; height: auto;" data-bs-toggle="collapse" data-bs-target="#chatMessage8" aria-expanded="false" aria-controls="chatMessage8">
+                                    <p style="color:white;" class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, placeat!</p>
+                                  
+                                </div>
+                                <div id="chatMessage8" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3" >12:01 AM</p>
+                                </div>
+
+                                
+                                <div class="rounded-4 d-flex justify-content-end align-items-end p-3 mb-2 w-50" style="background-color: #0e3470e7; overflow: hidden;" data-bs-toggle="collapse" data-bs-target="#chatMessage9" aria-expanded="false" aria-controls="chatMessage9">
+                                    <img src="../img/43143.jpg" class="w-100" alt="">
+                                </div>
+                                <div id="chatMessage9" class="collapse">
+                                    <p style="font-size:11px; display: block;" class="ps-2 mb-0 me-3">12:01 AM</p>
+                                </div>
+
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="d-flex p-2 align-items-center" style="background-color: whitesmoke; border: 1px solid gainsboro; border-radius: 0 0 5px 5px; height: 7.6%; ">
+                    <input type="file" accept="image/jpeg,image/png,image/jpg" id="fileInput" style="display: none;">
+                    <button class="rounded-circle btn m-2" onclick="document.getElementById('fileInput').click();"><i class="far fa-image pt-1" style="font-size: 21px; color:#0e3370"></i></button>
+                    <input class="rounded-pill form-control" type="text" style="height:40px;" name="" id="" placeholder="Aa">
+                    <button type="submit" class="rounded-circle btn m-2"><i class="fa-solid fa-paper-plane p-1" style="font-size: 18px; color:#0e3370"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Write a Post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <textarea class="p-3" name="" id="" style="width: 100%; resize: none;" rows="10"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Post Modal-->
+        <div class="modal fade" id="fullScreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Rengoku</h1>
+                        <div class="ms-auto"> <!-- Using ms-auto to push the button group to the right -->
+                            <div class="btn-group">
+                                <button type="button" style="border-top: 1px solid #efa92a; border-left: 1px solid #efa92a; border-bottom: 1px solid #efa92a;" class="btn" aria-current="page">
+                                    <i class="fas fa-arrow-up me-1" style="color: #efa92a;"></i>
+                                    <span style="font-size: 15px;">17</span>
+                                </button>
+                                <button type="button" style="border-top: 1px solid #0e3370; border-right: 1px solid #0e3370; border-bottom: 1px solid #0e3370;" class="btn">
+                                    <i class="fas fa-arrow-down me-1" style="color:#0e3370"></i>
+                                </button>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a picture of Rengoku</p>
+                        <div class="d-flex align-items-center justify-content-center rounded">
+                            <img src="../img/test.jpg" class="img-fluid w-100" alt="Full Screen Image">
+                        </div>
+
+                        <div class="d-flex rounded mt-3 p-3 p-4" style="background-color: whitesmoke;">
+                            <div class="d-flex align-items-center">
+                                <!-- Profile Picture -->
+                                <img src="../img/43143.jpg" class="rounded-circle" style="width: 40px; height: 40px;" alt="Profile Picture">
+
+                                <!-- Name and Comment Container -->
+                                <div class="d-flex flex-column ms-3 mt-3 rounded p-2 position-relative comment-container" style="background-color: rgb(214, 214, 214);">
+                                    <div class="dropdown" style="position: absolute; top: 10px; right: -50px;">
+                                        <button class="btn btn-light rounded" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke;">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            <li><a class="dropdown-item" href="#">Report</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex flex-column" style="align-items:start;">
+                                        <h5 class="mb-0" style="font-size:18px;">Florie Mae</h5>
+                                        <p class="mb-0" style="font-size:14px;">That is a nice pic!!</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Three dots icon for more options -->
+
+                        </div>
+
+                        <div class="d-flex rounded mt-1 align-items-center" style="background-color: whitesmoke;">
+                            <input type="text" class="round ms-5" name="" id="" placeholder="Write a comment..." style="width:80%;">
+                            <button class="btn m-3"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="Startup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Startup Title</h3>
+                        <img src="../img/test.jpg" class="img-fluid w-100" alt="Full Screen Image">
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem dicta voluptatum dignissimos aliquam atque accusamus deserunt dolorem excepturi corrupti. Cum quod enim temporibus voluptatibus, quisquam maxime rem doloremque placeat modi blanditiis et in, pariatur odit aut consequuntur mollitia ullam reiciendis exercitationem ipsum autem officia soluta sunt. Inventore, ex placeat?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+               document.addEventListener("DOMContentLoaded", function() {
+            const messageContainer = document.querySelector('.message-container1');
+            const messageTime = document.querySelector('.message-time');
+
+            messageContainer.addEventListener('click', function() {
+                messageTime.style.display = (messageTime.style.display === 'none' || messageTime.style.display === '') ? 'block' : 'none';
+            });
+        });
+
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+
+         
+
+        </script>
+
+</body>
+
+</html>
