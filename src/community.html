@@ -185,11 +185,10 @@
                 </div>
             </div>
 
-       
 
             <div class="col-12 col-xl-6 mt-2">
                 <div class="d-flex justify-content-center align-items-center flex-column" style="background-color: whitesmoke; border: 1px solid gainsboro;">
-                    <button id="sendMessageButton"></button>
+
                     <div class="container">
                         <div class="bg-light rounded d-flex align-items-center mt-3 bg-glassy" >
                             <img src="../img/logo2.png" class="me-3 m-4" alt="Bootstrap" width="60" height="60" style="border: 1px solid #efa92a; border-radius: 50%;">
@@ -198,6 +197,57 @@
     
                         </div>
                         <div id="posts">
+
+                            <div class="d-flex mb-4 mt-4 rounded bg-glassy position-relative">
+                                <div class="dropdown" style="position: absolute; top: 10px; right: 20px;">
+                                    <button class="btn btn-light rounded" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                    </ul>
+                                </div>
+                                <img src="../img/logo2.png" class="me-3 m-4" alt="Bootstrap" width="40" height="40" style="border: 1px solid #efa92a; border-radius: 50%;">
+                                <div class="d-flex flex-column">
+        
+                                    <div class="mt-4 mb-1">
+                                        <h5 style="margin-bottom: 0; font-size: 16px;">Aedrian Jeao De Torres</h5>
+                                        <p style="margin-bottom: 0; font-size:11px;">21 Feb 2024</p>
+                                    </div>
+        
+                                    <div class="mt-2">
+                                        <h4>Rengoku</h4>
+                                    </div>
+        
+                                    <div id="wow" class="bg-light rounded d-flex align-self-center" data-bs-toggle="modal" data-bs-target="#fullScreenModal" style="max-width: 80%; height: auto; border: 1px solid black; overflow: hidden; margin-right:60px;">
+                                        <div class="position-relative">
+                                            <img src="../img/test.jpg" class="img-fluid">
+                                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white clickable" style="background-color: rgba(0, 0, 0, 0.5); display: none;">
+                                                <span>View Post</span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="d-flex mt-2 mb-2">
+        
+                                        <div class="btn-group">
+                                            <button type="button" style="border-top: 1px solid #efa92a; border-left: 1px solid #efa92a; border-bottom: 1px solid #efa92a;" class="btn up-vote-btn" aria-current="page">
+                                                <i class="fas fa-arrow-up me-1" style="color: #efa92a;"></i>
+                                                <span id="upCount" style="font-size: 15px;">17</span>
+                                            </button>
+                                            <button type="button" style="border-top: 1px solid #0e3370; border-right: 1px solid #0e3370; border-bottom: 1px solid #0e3370;" class="btn down-vote-btn">
+                                                <i class="fas fa-arrow-down me-1" style="color:#0e3370"></i>
+                                            </button>
+                                        </div>
+        
+                                        <button class="btn btn-light rounded ms-1" style="background-color:whitesmoke; border: 1px solid #efa92a;">
+                                            <i class="fas fa-comments me-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             
 
                         </div>
@@ -262,17 +312,8 @@
                 <div class="modal-header" id="titlemodal">
 
                   
-                    <div class="ms-auto"> <!-- Using ms-auto to push the button group to the right -->
-                        <div class="btn-group">
-                            <button type="button" style="border-top: 1px solid #efa92a; border-left: 1px solid #efa92a; border-bottom: 1px solid #efa92a;" class="btn" aria-current="page">
-                                <i class="fas fa-arrow-up me-1" style="color: #efa92a;"></i>
-                                <span style="font-size: 15px;">17</span>
-                            </button>
-                            <button type="button" style="border-top: 1px solid #0e3370; border-right: 1px solid #0e3370; border-bottom: 1px solid #0e3370;" class="btn">
-                                <i class="fas fa-arrow-down me-1" style="color:#0e3370"></i>
-                            </button>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="ms-auto" id="engagement"> <!-- Using ms-auto to push the button group to the right -->
+                        
                     </div>
                 </div>
                 <div class="modal-body" id="contentainer">
@@ -281,7 +322,7 @@
                         <img src="../img/test.jpg" class="img-fluid w-100" alt="Full Screen Image">
                     </div>
 
-                    <div class="d-flex mt-3 p-3 p-4" style="background-color: whitesmoke; border-bottom: 1px solid gainsboro;">
+                    <div class="d-flex mt-3 p-3 p-4" style="background-color: whitesmoke; border-bottom: 1px solid gainsboro;" id="comments">
                         
                         <div class="d-flex flex-column ">
                             <!-- Profile Picture -->
@@ -351,13 +392,10 @@
                         <!-- Three dots icon for more options -->
 
                     </div>
-
-
-                    <div class="d-flex rounded mt-1 align-items-center" style="background-color: whitesmoke;">
-                        <input type="text" class="round ms-5 form-control" name="" id="" placeholder="Write a comment..." style="width:80%;">
-                        <button class="btn m-3"><i class="fas fa-paper-plane"></i></button>
+                    <div id="commentsContainer">
+                        
                     </div>
-
+                    
                 </div>
             </div>
         </div>
@@ -367,12 +405,14 @@
 
 <script>
 
-import io from 'socket.io-client';
-
 document.addEventListener('DOMContentLoaded', function () {
-          console.log("wow");
-            fetchPost();
-        });
+
+    fetchPost();
+
+});
+
+
+
 
 
        // Modal initialization code
@@ -418,6 +458,8 @@ container.innerHTML = `
 <p>Maximum</p>
 `;
 }
+
+
 </script>
 
 </html>
